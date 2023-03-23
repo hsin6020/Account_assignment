@@ -7,7 +7,7 @@ class Account(models.Model):
     username = models.CharField(
         max_length=32,
         unique=True,
-        validators=[MinLengthValidator(8, "Username must be at least 8 characters long.")],
+        validators=[MinLengthValidator(3, "Username must be at least 3 characters long.")],
     )
     password = models.CharField(
         max_length=32,

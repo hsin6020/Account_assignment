@@ -14,8 +14,8 @@ Create user account with username and password
 
 import requests
 url = "http://127.0.0.1:8000/account/"
-payload={'username': 'sting',
-        'password': 'sting'}
+payload={'username': 'string',
+        'password': 'string'}
 
 response = requests.request("POST", url, data=payload)
 
@@ -35,8 +35,8 @@ verify user account when user login
 
 import requests
 url = "http://127.0.0.1:8000/login/"
-payload={'username': 'sting',
-        'password': 'sting'}
+payload={'username': 'string',
+        'password': 'string'}
 
 response = requests.request("POST", url, data=payload)
 

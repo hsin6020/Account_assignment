@@ -6,7 +6,7 @@
 > python manage.py runserver 0.0.0.0:8000
 ```
 # Introduction APIs
-### Create Account API
+### Create_Account API
 Create user account with username and password
 #### Request
 ```
@@ -27,7 +27,7 @@ response = requests.request("POST", url, data=payload)
     "reason": ""
 }
 ```
-### Verify Account API
+### Verify_Account API
 verify user account when user login
 #### Request
 ```

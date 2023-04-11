@@ -11,5 +11,7 @@ class Account(models.Model):
     )
     password = models.CharField(
         max_length=32,
-        validators=[validate_pattern, MinLengthValidator(8, "Password must be at least 8 characters long.")],
+        validators=[validate_pattern, 
+                    MinLengthValidator(8, "Password must be at least 8 characters long.")
+        ],
     )

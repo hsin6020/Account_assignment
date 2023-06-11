@@ -15,3 +15,5 @@ class Account(models.Model):
                     MinLengthValidator(8, "Password must be at least 8 characters long.")
         ],
     )
+    def introduce_self(self):
+        return f"I am {self.username}."
